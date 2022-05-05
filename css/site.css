@@ -1,13 +1,25 @@
+form{
+    border-style: double;
+    padding:10px;
+}
+
+#mainTitle{
+    text-align: center;
+}
+#validation-summary{
+    text-align: center;
+}
+
 input[type=text]{
     padding:.4em;
 }
 
 label{
-    width:50%;
+    width:45%;
     display: inline-block;
     text-align: right;
 }
 
 checkbox, input[type=button]{
-    margin-left: 50%;
+    margin-left: 45%;
 }
