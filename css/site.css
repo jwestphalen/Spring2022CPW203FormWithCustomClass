@@ -23,3 +23,8 @@ label{
 checkbox, input[type=button]{
     margin-left: 45%;
 }
+
+#display{
+    text-align: center;
+    border-style: double;
+}
