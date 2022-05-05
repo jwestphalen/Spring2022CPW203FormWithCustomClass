@@ -7,6 +7,37 @@
     <title>Add Product Form</title>
 </head>
 <body>
-    
+
+    <h1>Add Video Games</h1>
+
+    <div id="validation-summary">
+        <p>Errors go here...</p>
+    </div>
+
+    <form>
+        <label for="title">Title: </label>
+        <input id="title" type="text">
+        <br>
+
+        <label for="price">Price: </label>
+        <br>
+
+        <label for="rating">Rating: </label>
+        <select id="rating">
+            <option></option>
+            <option>E Everyone</option>
+            <option>E10+ Everyone 10+</option>
+            <option>T Teen</option>
+            <option>M Mature 17+</option>
+            <option>AO Adults Only 18+</option>
+            <option>RP Rating Pending</option>
+        </select>
+        <br>
+
+        <label for = "online">Online Content?</label>
+        <br>
+
+        <input type="button" value="Add New Video Game">
+    </form>
 </body>
 </html>
