@@ -33,7 +33,29 @@ function isAllDataValid(){
 }
 
 function displayGame(myGame:VideoGame):void{
-    //TODO: Display video game below the form
+    let displayDiv = document.getElementById("display");
+
+    //Create <h2> with game title>
+    let gameHeading = document.createElement("h2");
+    gameHeading.innerText = myGame.title;
+
+    //Create paragraph with game details
+    let gameInfo = document.createElement("p");
+    let notOnlineDisplay = "";
+    //check if game is NOT online
+    if(!myGame.online){
+        notOnlineDisplay = "not";
+    }
+    gameInfo.innerText = myGame.title + " is rated " +
+        myGame.rating + ". It costs $" + myGame.price.toFixed(2) +
+        ". It is " + notOnlineDisplay + " online only.";
+    //Alternate for above example
+    /*gameInfo.innerText = `${myGame.title} has a rating of `+
+    `${myGame.rating}`;  */
+        
+    //Add <h2> in the <div id="display">
+    displayDiv.appendChild(gameHeading);
+    displayDiv.appendChild(gameInfo);
 }
 
 /**
