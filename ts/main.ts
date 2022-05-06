@@ -143,7 +143,7 @@ function isAllDataValid(game):boolean{
 
     if(game.region == ""){
         isAllDataValid = false;
-        errorInputRegion.nextElementSibling.innerHTML = "*";
+        regionInput.nextElementSibling.innerHTML = "*";
         errorInputRegion.innerHTML = "ERROR: Please input a region";
     }
     else{
