@@ -12,29 +12,40 @@
     <h1 id="mainTitle">Add Video Games</h1>
 
     <div id="validation-summary">
-        <p>Errors go here...</p>
+        <p id="errorTitle"></p>
+        <p id="errorPrice"></p>
+        <p id="errorRating"></p>
+        <p id="errorRegion"></p>
     </div>
 
     <form>
         <label for="title">Title: </label>
-        <input id="title" type="text">
+        <input id="title" type="text"><span></span>
         <br>
 
         <label for="price">Price: </label>
-        <input id="price" type="text">
+        <input id="price" type="text"><span></span>
         <br>
 
         <label for="rating">Rating: </label>
         <select id="rating">
             <option></option>
-            <option>E Everyone</option>
-            <option>E10+ Everyone 10+</option>
-            <option>T Teen</option>
-            <option>M Mature 17+</option>
-            <option>AO Adults Only 18+</option>
-            <option>RP Rating Pending</option>
+            <option>E for Everyone</option>
+            <option>E10+ for Everyone 10+</option>
+            <option>T for Teen</option>
+            <option>M for Mature 17+</option>
+            <option>AO for Adults Only 18+</option>
+            <option>RP for Rating Pending</option>
         </select>
         <br>
+
+        <label for="region">Region: </label>
+        <select id="region">
+            <option></option>
+            <option>North America</option>
+            <option>Europe</option>
+            <option>Oceania and Asia</option>
+        </select>
 
         <label for = "online">Online Content?</label>
         <input id = "online" type="checkbox">
